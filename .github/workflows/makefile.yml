@@ -1,11 +1,13 @@
-name: MakefileRunner
+name: Makefile
 on: push
 
 jobs:
- run-make:
+ make:
   name: Run the make command
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v2
    - name: make
      run: make all
+   - name: run
+     run: make run
