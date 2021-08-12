@@ -1,0 +1,11 @@
+<project name="Hello" default="compile" basedir=".">
+
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+
+  <target name="compile">
+    <mkdir dir="${build}"/>
+    <javac srcdir="${src}" destdir="${build}"/>
+  </target>
+
+</project>
